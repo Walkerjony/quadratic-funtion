@@ -1,0 +1,25 @@
+
+def delta(a, b ,c):
+    D = (b**2 - 4*a*c)
+    x1 = (-b + D ** (1 / 2)) / (2 * a)
+    x2 = (-b - D ** (1 / 2)) / (2 * a)
+    Xv = (-b / 2 * a)
+    Yv = (-D / 4 * a)
+
+    print(f'Valor de X1: {x1}')
+    print(f'Valor de X2: {x2}')
+    print(f'Valor de Xv: {Xv}')
+    print(f'Valor de Xv: {Yv}')
+
+
+while True:
+    a = float(input('A: '))
+    b = float(input('B: '))
+    c = float(input('C: '))
+    delta(a, b, c)
+
+    answ = input('Outro cáculo? S/N')
+    if (answ == 's'):
+         break
+
+
